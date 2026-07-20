@@ -63,7 +63,7 @@ La aplicación permite administrar pacientes, especialistas, especialidades, cit
 
 # Estructura general del proyecto
 
-
+```
 ├── clinic
 │   ├── __init__.py
 │   ├── admin.py
@@ -109,10 +109,7 @@ La aplicación permite administrar pacientes, especialistas, especialidades, cit
 ├── package-lock.json
 ├── package.json
 ├── requirements.txt
-\end{verbatim}
-
-
-  
+```
 
 ---
 
@@ -151,18 +148,14 @@ Antes de ejecutar el proyecto se recomienda tener instalado:
 ## 1. Clonar el repositorio
 
 ```bash
-https://github.com/brigittekarolay/Cl-nica-Odontol-gica-API-
+git clone https://github.com/brigittekarolay/Cl-nica-Odontol-gica-API-
 ```
-
----
 
 ## 2. Ingresar al proyecto
 
 ```bash
 cd Cl-nica-Odontol-gica-API-
 ```
-
----
 
 ## 3. Crear un entorno virtual
 
@@ -173,8 +166,6 @@ python -m venv venv
 ### ¿Qué es un entorno virtual?
 
 Un entorno virtual permite aislar las dependencias del proyecto para evitar conflictos con otras aplicaciones instaladas en el sistema.
-
----
 
 ## 4. Activar el entorno virtual
 
@@ -192,19 +183,15 @@ venv\Scripts\activate.bat
 
 ### Linux / macOS
 
-bash
+```bash
 source venv/bin/activate
-
-
----
+```
 
 ## 5. Instalar las dependencias
 
 ```bash
 pip install -r requirements.txt
 ```
-
----
 
 ## 6. Configurar las variables de entorno
 
@@ -216,7 +203,7 @@ Ejemplo:
 DATABASE_URL=postgresql://usuario:contraseña@host:puerto/nombre_db
 SECRET_KEY=tu_clave_secreta
 DEBUG=True
----
+```
 
 ## 7. Aplicar las migraciones
 
@@ -227,8 +214,6 @@ python manage.py migrate
 ### ¿Qué son las migraciones?
 
 Las migraciones permiten crear y actualizar la estructura de la base de datos a partir de los modelos definidos en Django.
-
----
 
 ## 8. Crear un superusuario (opcional)
 
@@ -243,8 +228,6 @@ El sistema solicitará:
 - Contraseña
 
 Este usuario tendrá acceso completo al panel administrativo.
-
----
 
 ## 9. Ejecutar el servidor
 
@@ -291,7 +274,7 @@ http://localhost:5173/
 # API REST
 
 El backend implementa una API REST desarrollada con Django REST Framework.
- 
+
 Entre las principales operaciones disponibles se encuentran:
 
 - Gestión de pacientes.
@@ -304,7 +287,7 @@ Entre las principales operaciones disponibles se encuentran:
 - Administración de presupuestos.
 - Registro de pagos.
 
-La comunicación entre el frontend y el backend se realiza mediante solicitudes HTTP utilizando formato JSON
+La comunicación entre el frontend y el backend se realiza mediante solicitudes HTTP utilizando formato JSON.
 
 ---
 
@@ -346,7 +329,7 @@ El proyecto React se encuentra organizado por responsabilidades.
 | Python | Lenguaje principal |
 | Django | Framework Backend |
 | simple JWT | Seguridad |
-| Swagger drf_spectacular| Documentacion | 
+| Swagger drf_spectacular | Documentación |
 | Django REST Framework | Desarrollo de API REST |
 | SQLite | Base de datos |
 | React | Frontend |
@@ -355,7 +338,6 @@ El proyecto React se encuentra organizado por responsabilidades.
 | HTML5 | Estructura de la interfaz |
 | CSS | Diseño de la interfaz |
 | Git | Control de versiones |
-
 
 ---
 
@@ -366,4 +348,3 @@ Este proyecto implementa una solución web para la gestión integral de una clí
 El backend desarrollado con **Django** y **Django REST Framework** proporciona una API REST robusta para la administración de la información clínica, mientras que el frontend construido con **React** y **Vite** ofrece una experiencia de usuario moderna, dinámica e intuitiva.
 
 La estructura modular del proyecto facilita su mantenimiento, escalabilidad y la incorporación de nuevas funcionalidades, convirtiéndolo en una base sólida para el desarrollo de sistemas de gestión clínica.
-
