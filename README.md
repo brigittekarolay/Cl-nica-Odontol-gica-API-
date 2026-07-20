@@ -331,7 +331,7 @@ El proyecto React se encuentra organizado por responsabilidades.
 | simple JWT | Seguridad |
 | Swagger drf_spectacular | Documentación |
 | Django REST Framework | Desarrollo de API REST |
-| SQLite | Base de datos |
+| PosgreSQL | Base de datos |
 | React | Frontend |
 | Vite | Empaquetador y servidor de desarrollo |
 | JavaScript / TypeScript | Desarrollo del cliente |
